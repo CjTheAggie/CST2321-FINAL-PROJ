@@ -1,0 +1,110 @@
+/* Stylesheet for Website */
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Header */
+header {
+  background-color: #003366; /* Dark Blue */
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffcc00; /* Gold */
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366; /* Dark Blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%; /* Makes images responsive */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Centers images by default in flexbox or grid */
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul li {
+    font-size: 0.9em;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
